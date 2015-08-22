@@ -1,4 +1,10 @@
 /* ============================================================
+  DOCUMENT SETUP
+============================================================ */
+body{
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
 .container {
@@ -13,12 +19,11 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
+  font-size: 2em;
 }
 section.module p {
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
 }
 section.module p:last-child {
@@ -36,7 +41,7 @@ section.module.parallax {
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
+  font-size: 3em;
   line-height: 600px;
   font-weight: 700;
   text-align: center;
@@ -44,28 +49,32 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("../img/demo/_small/1.jpg");
+  background-image: url("img/one.jpg");
 }
 section.module.parallax-2 {
-  background-image: url("../img/demo/_small/2.jpg");
+  background-image: url("img/two.jpg");
 }
 section.module.parallax-3 {
-  background-image: url("../img/demo/_small/3.jpg");
+  background-image: url("img/three.jpg");
 }
 
+
+/* ============================================================
+  RESPONSIVE TYPOGRAPHY
+============================================================ */
 @media all and (min-width: 600px) {
   section.module h2 {
-    font-size: 42px;
+    font-size: 3em;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 2.4em;
   }
   section.module.parallax h1 {
-    font-size: 96px;
+    font-size: 6em;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
+    font-size: 10em;
   }
 }
